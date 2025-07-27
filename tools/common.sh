@@ -10,7 +10,7 @@ function yes_or_no() {
 	local confirm
 	if [[ $# -ne 2 || ($1 != '--default-yes' && $1 != '--default-no') ]]; then
 		printerr 'usage: yes_or_no {--default-yes|--default-no} prompt'
-		exit 2
+		return 2
 	fi
 	if [[ $1 == '--default-yes' ]]; then
 		IFS= read -rp "$2 (Y/n): " confirm
