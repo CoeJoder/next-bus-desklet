@@ -1,0 +1,31 @@
+{
+  "name": "next-bus-desklet",
+  "version": "1.0.0",
+  "description": "Displays the next departure of a transit stop.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type-check": "tsc --noEmit",
+    "clearLogs": "./tools/clearLogs.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CoeJoder/next-bus-desklet.git"
+  },
+  "author": "CoeJoder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CoeJoder/next-bus-desklet/issues"
+  },
+  "homepage": "https://github.com/CoeJoder/next-bus-desklet#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "onebusaway-sdk": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

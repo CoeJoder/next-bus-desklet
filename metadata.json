@@ -1,0 +1,7 @@
+{
+    "uuid": "next-bus@coejoder",
+    "name": "Next Bus desklet",
+    "description": "Displays the next departure of a transit stop.",
+    "prevent-decorations": false,
+    "max-instances": "-1"
+}
