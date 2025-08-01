@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      // debug compiled .js
+      "name": "Launch via NPM",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      // debug .ts directly
       "name": "tsx",
       "type": "node",
       "request": "launch",
@@ -19,7 +40,7 @@
        * Open terminal when debugging starts (Optional)
        * Useful to see console.logs
        */
-      "console": "internalConsole",
+      "console": "integratedTerminal",
       "internalConsoleOptions": "openOnSessionStart",
 
       // Files to exclude from debugger (e.g. call stack)
